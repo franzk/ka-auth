@@ -1,4 +1,4 @@
-# Keycloak vuejs simple login
+# Kauth : Complete Authentication Service Project (auth + register) WIP
 
 ![VueJS 3](https://img.shields.io/badge/Vue.js%203-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D&style=flat-square)
 ![Keycloak 25.0.2](https://img.shields.io/badge/keycloak%2025.0.2-4169e1?style=for-the-badge&logo=keycloak&logoColor=white&style=flat-square) 
@@ -9,7 +9,7 @@
 
 ### 1. clone this repository
 ```console 
-git clone https://github.com/franzk/keycloak-vuejs-simple.git
+git clone https://github.com/franzk/kauth.git
 ```
 ### 2. Rename the .env.dist File
 Rename the `docker/.env.dist` file to `docker/.env` and fill in the environment variables with values.  
