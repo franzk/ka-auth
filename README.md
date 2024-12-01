@@ -1,4 +1,4 @@
-# Kauth : Complete Authentication Service Project (auth + register) WIP
+# KA Auth : Complete Authentication Service Project (auth + register) WIP
 
 ![VueJS 3](https://img.shields.io/badge/Vue.js%203-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D&style=flat-square)
 ![Keycloak 25.0.2](https://img.shields.io/badge/keycloak%2025.0.2-4169e1?style=for-the-badge&logo=keycloak&logoColor=white&style=flat-square)
