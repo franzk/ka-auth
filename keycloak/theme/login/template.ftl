@@ -12,7 +12,7 @@
             <meta name="${meta?split('==')[0]}" content="${meta?split('==')[1]}"/>
         </#list>
     </#if>
-    <title>Keycloak vuejs simple login</title>
+    <title>Ka Auth</title>
     <link rel="icon" href="${url.resourcesPath}/img/favicon.ico" />
     <#if properties.stylesCommon?has_content>
         <#list properties.stylesCommon?split(' ') as style>
@@ -53,7 +53,7 @@
 
 <body class="${properties.kcBodyClass!}">
 <header class="login-title">
-    <h1>Keycloak vuejs simple login</h1>
+    <h1>Login to Ka Auth !!</h1>
 </header>
 <div class="${properties.kcLoginClass!}">
     <div class="${properties.kcFormCardClass!}">

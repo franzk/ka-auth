@@ -1,13 +1,19 @@
 <template>
   <section>
-    <h3>Welcome to the home page!</h3>
+    <h3>Welcome to Ka Auth !! 🙂</h3>
   </section>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'Home',
-})
+<script setup lang="ts">
 </script>
+
+<style lang="scss" scoped>
+section {
+  display: flex;;
+}
+
+h3 {
+  flex: 1;
+  text-align: center;
+}
+</style>

@@ -1,71 +1,63 @@
 <template>
-    <header class="banner">
-        <h2>Keycloak vuejs simple login</h2>
-        <nav>
-            <ul>
-                <li><router-link to="/">Home</router-link></li>
-                <li><router-link to="/about">About</router-link></li>
-                <li><button @click="logout">Logout</button></li>                
-        </ul>
-        </nav>
-    </header>
+  <header class="banner">
+    <h2>KA Auth - Let's get auth !!</h2>
+    <nav>
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/account">My Account</router-link></li>
+        <li class="logout"><button @click="logout">Logout</button></li>                
+    </ul>
+  </nav>
+  </header>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 import { useAuthStore } from '@/store/authStore'
+const authStore = useAuthStore();
 
-export default defineComponent({
-  name: 'Banner',
-  setup() {
-    const authStore = useAuthStore();
-
-    const logout = () => {
-      authStore.logout()
-    }
-
-    return {
-      logout
-    }
-  }
-})
+const logout = () => {
+  authStore.logout()
+}
 </script>
 
 <style scoped lang="scss">
 .banner {
-  background-color: #333;
   padding: 1em;
-  color: white;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $color-primary;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  flex: 1;
+  text-align: center;
 }
 
 nav ul {
   list-style: none;
+  flex: 1;
   display: flex;
   margin: 0;
-}
 
-nav ul li {
-  flex: 1;
-}
+  li {
+    margin-left: 2rem;
+    a {
+      text-decoration: none;
+    }
+  }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+  .logout {
+    margin-left: auto;
+  }
 }
 
 button {
-  // padding: 10px 20px;
   font-size: 1em;
-  color: #fff;
-  background-color: #444;
+  color: $color-white;
+  background-color: $color-primary;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #666;
-}
 </style>
