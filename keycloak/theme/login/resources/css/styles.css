@@ -110,6 +110,11 @@
 	text-align: center;
 }
 
+#kc-registration {
+	text-align: center;
+	margin-top: 1rem;
+}
+
 /* Style de fond pour la page */
 body {
 	background-color: var(--color-secondary);
