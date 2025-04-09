@@ -15,7 +15,7 @@ git clone https://github.com/franzk/kauth.git
 
 ### 2. Rename the .env.dist File
 
-Rename the `docker/.env.dist` file to `docker/.env` and fill in the environment variables with values.  
+Rename the `.env.dist` file to `.env` and fill in the environment variables with values.  
 You can use default or random values for the environment variables as their specific values are not crucial for the setup.
 
 ### 3. Set up Keycloak
