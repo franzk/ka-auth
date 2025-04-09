@@ -1,10 +1,10 @@
-package net.franzka.keycloak;
+package net.franzka.kaauth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FranzKaKeycloakApplicationTests {
+class KaauthApplicationTests {
 
 	@Test
 	void contextLoads() {

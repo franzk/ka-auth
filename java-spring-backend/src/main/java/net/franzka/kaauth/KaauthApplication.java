@@ -1,13 +1,13 @@
-package net.franzka.keycloak;
+package net.franzka.kaauth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FranzKaKeycloakApplication {
+public class KaauthApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FranzKaKeycloakApplication.class, args);
+		SpringApplication.run(KaauthApplication.class, args);
 	}
 
 }
