@@ -1,0 +1,10 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: "http://localhost:5026/realms/vue"
+          audiences: vuejs
+
+server:
+  port: 5027
